@@ -1,7 +1,15 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/infastructure_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
     },
-    "timestamp": 1546432256
+    "timestamp": 1546434292
   }
 }
