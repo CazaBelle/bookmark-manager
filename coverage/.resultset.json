@@ -1,7 +1,28 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/carol/makers_projects/week-4/bookmark-manager/spec/bookmark_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/infastructure_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/view_bookmarks_spec.rb": [
         1,
         1,
         1,
@@ -10,6 +31,6 @@
         null
       ]
     },
-    "timestamp": 1546434292
+    "timestamp": 1546604146
   }
 }
