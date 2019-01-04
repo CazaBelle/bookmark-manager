@@ -12,3 +12,6 @@ group :test do
   gem 'simplecov', '~> 0.16.1'
   gem 'simplecov-console', '~> 0.4.2'
 end
+
+gem "data_mapper", "~> 1.0"
+gem "dm-postgres-adapter", "~> 1.2"

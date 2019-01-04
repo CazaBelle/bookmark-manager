@@ -1,7 +1,18 @@
-<% @BM_list.each do |bm| %>
+<h1>Welcome to Bookmark Manager</h1>
+
+
+  <form action='/bookmarks' method='post'>
+    <input type='text' name='url' placeholder="Enter favourite url" >
+    <input type= 'submit' value='submit'>
+  </form>
+
+
+<% @bookmarks.each do |bm| %>
 <ul>
   <li>
-  <%= bm %>
+    <a href='http://<%= bm.url %>'><%= bm.url %></a>
   </li>
 </ul>
 <%end%>
+
+

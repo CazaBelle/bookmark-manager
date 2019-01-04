@@ -1,6 +1,10 @@
+require 'data_mapper'
 
 class Bookmark
-  def all
-    # @bookmarks = ['https://makers.tech', 'https://codebar.io/', 'https://github.com/']
-  end 
+  include DataMapper::Resource
+
+  property :id, Serial
+  property :url, String
+
+  
 end

@@ -5,14 +5,18 @@
         1,
         null,
         1,
+        2,
+        null,
         1,
         1,
         1,
-        1,
-        1,
+        null,
         null,
         null,
         null
+      ],
+      "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/bookmarks_list_spec.rb": [
+
       ],
       "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/infastructure_spec.rb": [
         1,
@@ -27,10 +31,12 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1546604146
+    "timestamp": 1546620881
   }
 }
