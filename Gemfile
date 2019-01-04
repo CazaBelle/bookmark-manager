@@ -11,6 +11,8 @@ group :test do
   gem 'rubocop', '~> 0.62.0'
   gem 'simplecov', '~> 0.16.1'
   gem 'simplecov-console', '~> 0.4.2'
+  gem 'database_cleaner'
+  gem 'dm-transactions'
 end
 
 gem "data_mapper", "~> 1.0"

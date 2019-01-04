@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-01-04T16:54:41+00:00">2019-01-04T16:54:41+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-01-04T17:44:50+00:00">2019-01-04T17:44:50+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.08
+         1.05
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>4</b> files in total.
-    <b>16</b> relevant lines. 
-    <span class="green"><b>16</b> lines covered</span> and
+    <b>6</b> files in total.
+    <b>25</b> relevant lines. 
+    <span class="green"><b>25</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -71,6 +71,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#c57b8ab5c9d8ec50807204041d2b3a5b5906f894" class="src_link" title="spec/features/click_bookmarks_spec.rb">spec/features/click_bookmarks_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#f40e6094ceb8fb392135525643b952335263d3f4" class="src_link" title="spec/features/infastructure_spec.rb">spec/features/infastructure_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
@@ -83,9 +93,19 @@
       <tr>
         <td class="strong"><a href="#e6797064be1e27f7d75d0d44aad1f86c0f6c185f" class="src_link" title="spec/features/view_bookmarks_spec.rb">spec/features/view_bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
         <td>6</td>
-        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#aabe5ca3abbbd7ba8a969f92b332ed08b8b6fd5f" class="src_link" title="spec/features/web_helper_spec.rb">spec/features/web_helper_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -216,6 +236,79 @@
 </div>
 
       
+        <div class="source_table" id="c57b8ab5c9d8ec50807204041d2b3a5b5906f894">
+  <div class="header">
+    <h3>spec/features/click_bookmarks_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">feature &#39;visits url&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scenario &#39;when user click on url takes to page&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit(&#39;/&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in :url, with: &#39;www.google.co.uk&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button(&#39;submit&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link(&#39;www.google.co.uk&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(current_path == &#39;https://www.google.co.uk&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end </code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="f40e6094ceb8fb392135525643b952335263d3f4">
   <div class="header">
     <h3>spec/features/infastructure_spec.rb</h3>
@@ -276,8 +369,8 @@
     <h3>spec/features/view_bookmarks_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -300,34 +393,71 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit(&#39;/&#39;)</code>
+          <code class="ruby">    add_url_and_submit</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in :url, with: &#39;makers.tech&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_button(&#39;submit&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
           <code class="ruby">    expect(page).to have_content(&#39;makers.tech&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="aabe5ca3abbbd7ba8a969f92b332ed08b8b6fd5f">
+  <div class="header">
+    <h3>spec/features/web_helper_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def add_url_and_submit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit(&#39;/&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in :url, with: &#39;makers.tech&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_button(&#39;submit&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
