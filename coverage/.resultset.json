@@ -15,9 +15,6 @@
         null,
         null
       ],
-      "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/bookmarks_list_spec.rb": [
-
-      ],
       "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/click_bookmarks_spec.rb": [
         1,
         1,
@@ -30,6 +27,17 @@
         null
       ],
       "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/delete_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/edit_bookmark_spec.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -56,12 +64,12 @@
       ],
       "/Users/carol/makers_projects/week-4/bookmark-manager/spec/features/web_helper_spec.rb": [
         1,
-        2,
-        2,
-        2,
+        3,
+        3,
+        3,
         null
       ]
     },
-    "timestamp": 1546767737
+    "timestamp": 1546768673
   }
 }
