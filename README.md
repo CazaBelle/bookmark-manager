@@ -35,6 +35,7 @@ Domain Model
 ![](images/domain_model_bookmark_manager.png)
 
 
+ <a href='http://<%= bm.url %>'><%= bm.url %></a> 
 
 
 

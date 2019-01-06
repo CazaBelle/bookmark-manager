@@ -1,2 +1,20 @@
 
+<% @bookmarks.each do |bm| %>
+<ul>
+  <li>
+    <%= bm.id %>
+    <a href='<%= bm.url %>'><%= bm.url %></a> 
+  <form action='/bookmarks/<%= bm.id %>/edit'>
+    <input type='submit' value='edit'>
+  </form>
+  <form action="/bookmarks/<%= bm.id %>/delete">
+    <input name="_method" type="hidden" value="delete">
+    <input type="submit" value="delete">
+  </form>
+
+  </li>
+</ul>
+<%end%>
+
+
 

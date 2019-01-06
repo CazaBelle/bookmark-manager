@@ -7,18 +7,40 @@ require_relative 'datamapper_setup'
 
 # BM class inherits sinatra traits
 class BookmarkManager < Sinatra::Base
+  enable :method_override 
 
   get '/' do
-    @bookmarks = Bookmark.all
     erb(:index)
-    
   end
 
-  post '/bookmarks' do 
-   @bookmark = Bookmark.create(url: params[:url])
-   redirect'/'
+  post '/bookmark' do 
+    @bookmark = Bookmark.create(url: params[:url])
+    redirect'/bookmarks'
+   end
+  
+  get '/bookmarks' do 
+    @bookmarks = Bookmark.all
+    erb(:bookmarks)
   end
 
- 
+  get '/bookmarks/:id' do |id|
+    @bookmark = Bookmark.get!(id)
+  end
+
+  get '/bookmarks/:id/edit' do
+    @bookmark = Bookmark.get(params[:id])
+    erb(:edit_bookmark)
+  end
+
+  put '/bookmarks/:id' do
+    @bookmark = Bookmark.get(params[:id])
+    @bookmark.update!(:url => params[:url])
+    redirect '/bookmarks'
+  end
+
+  get '/bookmarks/:id/delete' do 
+    Bookmark.get(params[:id]).destroy 
+    redirect('/bookmarks')
+  end
 
 end
